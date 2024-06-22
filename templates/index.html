@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static "style.css" %}">
+    <link rel="shortcut icon" href="{% static "owner.jpg" %}" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <title>Home | DesignWithSushant</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed w-100 z-3" id="nav-bar">
+        <div class="container-fluid">
+            <img class="navbar-brand" src="{% static "logo.png" %}">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#official">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutme">About Me</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Frontend Development</a></li>
+                            <li><a class="dropdown-item" href="#">Graphic Designing</a></li>
+                            <li><a class="dropdown-item" href="#">Backend Development</a></li>
+                            <li><a class="dropdown-item" href="#">Full Stack Development</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#services">Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            My Projects
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Hotel Management System</a></li>
+                            <li><a class="dropdown-item" href="#">Portfolios</a></li>
+                            <li><a class="dropdown-item" href="#">Birthday Sender</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/My-Projects">My Projects</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactme">Contact Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">SignIn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tel:+911234567890">+91 1234567890</a>
+                    </li>
+                </ul>
+                <a href="#contactme">
+                    <button type="button" class="px-4 py-2 rounded-1" id="nav-bar-contact-btn">Hire Me</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section class="home d-flex w-100 align-items-center" id="official">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://img.freepik.com/free-photo/representation-user-experience-interface-design_23-2150169847.jpg?t=st=1718975021~exp=1718978621~hmac=2c53e4a19d1085f876dc2ad66392c95c1ac8c2bd14376ede85679af12e93928a&w=826"
+                        class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fs-1">Innovative & Stunning Designs</h5>
+                        <p class="fs-4">Explore designs about simplicity and beautiness</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://img.freepik.com/free-photo/person-front-computer-working-html_23-2150040428.jpg?t=st=1718975323~exp=1718978923~hmac=22c7410e37147fdf00bef02836f9d26995b3fc2fb07e64096c069c366f2470dd&w=900"
+                        class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fs-1">Approached awesome latest technologies</h5>
+                        <p class="fs-4">Latest versions of technologies helps keep update you to all features</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://img.freepik.com/free-photo/employer-networking_1098-15888.jpg?t=st=1718975377~exp=1718978977~hmac=8c2ac59e7a2a58f745b9f1a886fb44bfd597a55c034f7a68ce12afd375497afe&w=900"
+                        class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fs-1">Best business strategies & conversations</h5>
+                        <p class="fs-4">Get best strategies to grow online with our products</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon w-25 h-25" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon w-25 h-25" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section class="about position-relative w-100" id="aboutme">
+        <div class="left-wrapper">
+            <h1 class="anta-regular">About me</h1>
+            <p>Hi Hello, I'm <span style="color: crimson;">Sushant</span>, a software developer and designer driven by a passion for creating innovative, user-centric solutions. With expertise in Web Designing, Graphic Designing, Software Development etc...., I bridge the gap between functionality and aesthetics, delivering high-quality products that exceed expectations.</p>
+            <a href="#"><button class="read-more-btn">Read More</button></a>
+        </div>
+        <div class="right-wrapper">
+            <img src="https://img.freepik.com/free-vector/men-multitasking-with-computer-phone_23-2148409476.jpg?t=st=1719001500~exp=1719005100~hmac=a0d45f55dca09d05a2ca1074a931f34a5bd96c5ce6914feedc1bdb5609ffb402&w=740"
+                alt="AboutImage">
+        </div>
+    </section>
+    <section class="example">
+        <h1 class="anta-regular text-center z-2">A Step towards Success</h1>
+        <div id="carouselExampleIndicators" class="carousel slide w-75">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://img.freepik.com/free-photo/scammer-happy-after-obtaining-sensitive-information-from-users-using-malware_482257-88633.jpg?t=st=1718982300~exp=1718985900~hmac=118a9a984221d83878aaf54b00eca214a0041bb4cfc86694a2ddc7f9c15f125c&w=1060"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://img.freepik.com/free-photo/business-people-brainstorming-ideas-plan-work-report-with-data-charts-graphs-analyzing-research-information-create-successful-project-office-partnership-collaboration_482257-47596.jpg?t=st=1718982338~exp=1718985938~hmac=f7160d9af2271d8a0503286cb5d3b9925b13475e5478949f25d3ad96e487103f&w=1060"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://img.freepik.com/premium-photo/developers-discussing-programming-code_274689-34930.jpg?w=900"
+                        class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section class="services position-relative w-100" id="services">
+        <h1 class="anta-regular text-center">Our Services</h1>
+        <div class="service-content d-flex">
+            <div class="left-wrapper">
+                <h1 class="anta-regular">Innovative & Stunning Designs</h1>
+                <p>We craft designs that inspire and delight, combining creativity with technical expertise to deliver visually stunning solutions. From concept to launch, we push the boundaries of innovation, blending form and function to create immersive experiences that captivate and engage users.</p>
+                <a href="#"><button class="read-more-btn">Read More</button></a>
+            </div>
+            <div class="right-wrapper">
+                <img src="https://img.freepik.com/premium-vector/isometric-illustration-people-engaged-creation-website_253334-463.jpg?w=740"
+                    alt="AboutImage">
+            </div>
+        </div>
+        <div class="service-content d-flex">
+            <div class="left-wrapper">
+                <h1 class="anta-regular">SEO Optimization</h1>
+                <p>We optimize digital experiences for maximum visibility, leveraging expertise in search engine algorithms and best practices to drive traffic and conversions. Through keyword research, on-page optimization, and technical SEO, we ensure websites rank higher, load faster, and outperform the competition.</p>
+                <a href="#"><button class="read-more-btn">Read More</button></a>
+            </div>
+            <div class="right-wrapper">
+                <img src="https://img.freepik.com/free-vector/seo-concept-illustration_114360-5766.jpg?t=st=1719001069~exp=1719004669~hmac=7f5460fd97183ed8c66ca1f6e08fe689408dfa2e6a2bc6b06a98176ce6400804&w=740"
+                    alt="AboutImage">
+            </div>
+        </div>
+        <div class="service-content d-flex">
+            <div class="left-wrapper">
+                <h1 class="anta-regular">Cost & Time Effective Services</h1>
+                <p>We deliver high-quality services that meet deadlines and budgets, ensuring maximum ROI for clients. By streamlining processes, leveraging efficient tools, and assigning tasks effectively, we provide cost-effective solutions that save time and resources, without compromising on quality or results.</p>
+                <a href="#"><button class="read-more-btn">Read More</button></a>
+            </div>
+            <div class="right-wrapper">
+                <img src="https://img.freepik.com/premium-vector/online-payment-concept-modern-flat-design-man-conducts-online-financial-transaction_9209-6803.jpg?w=740"
+                    alt="AboutImage">
+            </div>
+        </div>
+        <div class="service-content d-flex">
+            <div class="left-wrapper">
+                <h1 class="anta-regular">Custom Admin Panel</h1>
+                <p>We design and develop custom admin panels that simplify complex operations, providing intuitive interfaces for effortless management. With tailored features and seamless integrations, our solutions empower administrators to efficiently manage data, track performance, and make data-driven decisions, all from a single, user-friendly dashboard.</p>
+                <a href="#"><button class="read-more-btn">Read More</button></a>
+            </div>
+            <div class="right-wrapper">
+                <img src="https://img.freepik.com/free-vector/dashboard-user-panel-template_23-2148355297.jpg?t=st=1719001308~exp=1719004908~hmac=04b4e60f32856bbd0227679d8b1bfc6436ba36f7d2365f84e76cd39f05b8ea96&w=740"
+                    alt="AboutImage">
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h1 class="anta-regular text-center">My Projects</h1>
+        <div class="card-layout-content mx-auto">
+            {% if projects %}
+                {% for projects_item in projects %}
+                    <div class="card-content">
+                        <img src="{{projects_item.image.url}}" alt="ImageError">
+                        <h2 class="anta-regular fs-3 mt-4">{{projects_item.title}}</h2>
+                        <p class="pt-4">{{projects_item.para}}</p>
+                        <a href="{{projects_item.link}}"><button class="read-more-btn">Read More</button></a>
+                    </div> 
+                {% endfor %}
+                {% else %}
+                <h3 class="text-center fs-5">No projects to show...</h3>
+            {% endif %}
+        </div>
+    </section>
+    <section class="contact" id="contactme">
+        <div class="container d-flex justify-content-center align-items-center">
+            <img src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?t=st=1718996991~exp=1719000591~hmac=d5d4c269b8872f40e3c2bb4c89b7c2c936be102dd0d896a79707ab045d39f92b&w=740"
+                alt="">
+            <form>
+                <h1 class="title text-center mb-4 anta-regular">Talk to Me</h1>
+
+                <!-- Name -->
+                <div class="form-group position-relative">
+                    <label for="formName" class="d-block">
+                        <i class="icon" data-feather="user"></i>
+                    </label>
+                    <input type="text" id="formName" class="form-control form-control-lg thick" placeholder="Name">
+                </div>
+
+                <!-- E-mail -->
+                <div class="form-group position-relative">
+                    <label for="formEmail" class="d-block">
+                        <i class="icon" data-feather="mail"></i>
+                    </label>
+                    <input type="email" id="formEmail" class="form-control form-control-lg thick" placeholder="E-mail">
+                </div>
+
+                <!-- Message -->
+                <div class="form-group message">
+                    <textarea id="formMessage" class="form-control form-control-lg" rows="7"
+                        placeholder="Ask Your Question"></textarea>
+                </div>
+
+                <!-- Submit btn -->
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary" tabIndex="-1">Send message</button>
+                </div>
+            </form>
+
+        </div>
+    </section>
+    <footer class="d-flex flex-wrap justify-content-evenly align-items-center py-4 border-top">
+        <div class="col-md-6 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-body-secondary">©2024 DesignWithSushant</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/enosentboyy/"><i class="bi bi-instagram"></i></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="https://www.twitter.com"><i class="bi bi-twitter"></i></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/sushantchahar"><i class="bi bi-linkedin"></i></a></li>
+        </ul>
+    </footer>
+    <script>
+        const words = ['Web Designer', 'Web Developer', 'Software Developer'];
+        let i = 0;
+        let timer;
+
+        function typingEffect() {
+            let word = words[i].split("");
+            var loopTyping = function () {
+                if (word.length > 0) {
+                    document.getElementById('word').innerHTML += word.shift();
+                } else {
+                    deletingEffect();
+                    return false;
+                };
+                timer = setTimeout(loopTyping, 200);
+            };
+            loopTyping();
+        };
+
+        function deletingEffect() {
+            let word = words[i].split("");
+            var loopDeleting = function () {
+                if (word.length > 0) {
+                    word.pop();
+                    document.getElementById('word').innerHTML = word.join("");
+                } else {
+                    if (words.length > (i + 1)) {
+                        i++;
+                    } else {
+                        i = 0;
+                    };
+                    typingEffect();
+                    return false;
+                };
+                timer = setTimeout(loopDeleting, 150);
+            };
+            loopDeleting();
+        };
+
+        typingEffect();
+    </script>
+</body>
+
+</html>
